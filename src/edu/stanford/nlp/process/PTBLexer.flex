@@ -762,7 +762,7 @@ ABNUM = tel|est|ext|sq
 /* p used to be in ABNUM list, but it can't be any more, since the lexer
    is now caseless.  We don't want to have it recognized for P.  Both
    p. and P. are now under ABBREV4. ABLIST also went away as no-op [a-e] */
-ABPTIT = Jr|Sr|Bros|(Ed|Ph)\.D|Esq
+ABPTIT = Jr|Bros|(Ed|Ph)\.D|Esq
 
 /* ABBREV1 abbreviations are normally followed by lower case words.
  *  If they're followed by an uppercase one, we assume there is also a
@@ -776,7 +776,7 @@ ABBREV1 = ({ABMONTH}|{ABDAYS}|{ABSTATE}|{ABCOMP}|{ABNUM}|{ABPTIT}|etc|al|seq|Bld
 ACRO = [A-Za-z](\.[A-Za-z])*|(Canada|Sino|Korean|EU|Japan|non)-U\.S|U\.S\.-(U\.K|U\.S\.S\.R)
 ACRO2 = [A-Za-z](\.[A-Za-z])+|(Canada|Sino|Korean|EU|Japan|non)-U\.S|U\.S\.-(U\.K|U\.S\.S\.R)
 /* ABTITLE is mainly person titles, but also Mt for mountains and Ft for Fort. */
-ABTITLE = Mr|Mrs|Ms|Mx|[M]iss|Drs?|Profs?|Sens?|Reps?|Attys?|Lt|Col|Gen|Messrs|Govs?|Adm|Rev|Maj|Sgt|Cpl|Pvt|Capt|Ste?|Ave|Pres|Lieut|Rt|Hon|Brig|Co?mdr|Pfc|Spc|Supts?|Det|Mt|Ft|Adj|Adv|Asst|Assoc|Ens|Insp|Mlle|Mme|Msgr|Sfc
+ABTITLE = Mr|Mrs|Ms|Mx|[M]iss|Drs?|Profs?|Sens?|Reps?|Attys?|Lt|Col|Gen|Messrs|Govs?|Adm|Rev|Maj|Sgt|Cpl|Pvt|Capt|Ste?|Ave|Pres|Lieut|Rt|Hon|Brig|Co?mdr|Pfc|Spc|Supts?|Det|Mt|Ft|Adj|Adv|Asst|Assoc|Ens|Insp|Mlle|Mme|Msgr|Sfc|Sr
 ABCOMP2 = Invt|Elec|Natl|M[ft]g|Dept|Blvd|Rd|Ave
 
 /* ABRREV2 abbreviations are normally followed by an upper case word.
